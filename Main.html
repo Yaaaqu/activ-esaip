@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-	<meta name="author" content="Inès Meriel-Bussy, Roxane Desjames">
-    <meta name="keywords" content="ASRE49, concours, questionnaire">
-	<meta name="description" content="Questionnaire du concours sécurité routière 2023 de l'ASRE49.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Main.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Inès Meriel-Bussy, Roxane Desjames" />
+    <meta name="keywords" content="ASRE49, concours, questionnaire" />
+    <meta
+      name="description"
+      content="Questionnaire du concours sécurité routière 2023 de l'ASRE49."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Main.css" />
     <title>ASRE49 - Questionnaire</title>
     <!--Envoyer les données ET rediriger vers la page de remerciements--
     <script>    
@@ -17,174 +20,213 @@
           window.location.href = 'https://yaaaqu.github.io/activ-esaip/Fini.html';
         }
         </script> -->
-         
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <img src="Images\ASRE_49_Logotype_ASRE_Baseline_Logo_Horizon_Couleurs.jpg" alt="Logo ASRE49" class="logo_ASRE49_horiz">
-        <img src="Images\ASRE_49_Logotype_ASRE_Baseline_Logo_Verti_Couleurs.jpg" alt="Logo ASRE49" class="logo_ASRE49_verti">
-        <h1>Concours sécurité routière ASRE49</h1>
-        <img src="Images\route_ASRE49_logo.png" alt="dessin d'une route" class="deco">
+      <img
+        src="Images\ASRE_49_Logotype_ASRE_Baseline_Logo_Horizon_Couleurs.jpg"
+        alt="Logo ASRE49"
+        class="logo_ASRE49_horiz"
+      />
+      <img
+        src="Images\ASRE_49_Logotype_ASRE_Baseline_Logo_Verti_Couleurs.jpg"
+        alt="Logo ASRE49"
+        class="logo_ASRE49_verti"
+      />
+      <h1>Concours sécurité routière ASRE49</h1>
+      <img
+        src="Images\route_ASRE49_logo.png"
+        alt="dessin d'une route"
+        class="deco"
+      />
     </header>
-    <p>Accédez au <a id="livret" href="Documents\chp 1 - intro - algo v5 - sept2019.pdf" target="_blank">Livret pédagogique</a></p>
-    <form id="formulaire" method="post" action="https://script.google.com/macros/s/AKfycbze80pz9uUH79dKtQzt7qH0_Q_uO5UGoTlKy3ug706nUZxcmaGubz--WMCGMN5-fDWrQQ/exec">
-        <p class="sous-titre">Vos informations :</p>
-        <label>
-            Nom :
-            <input type ="text" name="nom" id="nom">
-        </label>
-        
-        <label>
-            Prénom :
-            <input type ="text" name="prenom" id="prenom">
-        </label>
+    <p>
+      Accédez au
+      <a
+        id="livret"
+        href="Documents\chp 1 - intro - algo v5 - sept2019.pdf"
+        target="_blank"
+        >Livret pédagogique</a
+      >
+    </p>
+    <form
+      id="formulaire"
+      method="post"
+      action="https://script.google.com/macros/s/AKfycbyVkzw9Qi3X6LEQQknwGbEDTyU8aCCgs6IEKFinyNse344SJ1ZvjQ77_5v7nBqDCv4wrw/exec"
+    >
+      <p class="sous-titre">Vos informations :</p>
+      <label>
+        Nom :
+        <input type="text" name="nom" id="nom" />
+      </label>
 
-        <label>
-            Date de naissance :
-            <input type="date" id="naissance" name="naissance">
-        </label>
+      <label>
+        Prénom :
+        <input type="text" name="prenom" id="prenom" />
+      </label>
 
-        <label>
-            Entreprise :
-            <select id="entreprise" name="entreprise">
-                <option value="Base">-- Selectionner --</option>
-                <option value="A">Entreprise A</option>
-                <option value="B">Entrep B</option>
-                <option value="C">Entrep C</option>
-                <option value="D">Entrep D</option>
-            </select>
-        </label>
-        
-        <label class="petit">
-            <input class="collecte_donnees" type ="checkbox" name="collecte_donnees" id="collecte_donnees">
-            Je consens à l'utilisation des données collectées par l'ASRE49 pour le bon déroulement du jeu-concours. 
-            <p class="ppetit">Le prestataire s'engage à ne pas réutiliser les données fournies à des fins commerciales.</p>
-            <p class="ppetit">Jeu limité à un seul bulletin par salarié.</p>  
-            <p class="ppetit">Règlement complet du jeu disponible auprès du correspondant ASRE49 de votre entreprise.</p>
-        </label>
-        
-        <p class="sous-titre">Questionnaire :</p>
+      <label>
+        Date de naissance :
+        <input type="date" id="naissance" name="naissance" />
+      </label>
 
-        <div id="questionnaire">
+      <label>
+        Entreprise :
+        <select id="entreprise" name="entreprise">
+          <option value="Base">-- Selectionner --</option>
+          <option value="A">Entreprise A</option>
+          <option value="B">Entrep B</option>
+          <option value="C">Entrep C</option>
+          <option value="D">Entrep D</option>
+        </select>
+      </label>
 
-            <fieldset>
-                <p class="question">Question 1:</p>
-                <label class="form-control">
-                    <input type="checkbox" id="A" name="Q1" value="A">
-                    Réponse A
-                </label>
-                <label class="form-control">
-                    <input type="checkbox" id="B" name="Q1" value="B">
-                    Réponse B
-                </label>
-                <label class="form-control">
-                    <input type="checkbox" id="C" name="Q1" value="C">
-                    Réponse C
-                </label>
-            </fieldset>
-            
-            <fieldset>
-                <p class="question">Question choix unique</p>
-                <label class="form-control">
-                    <input type="radio" id="D" name="unique" value="D">
-                    Réponse D
-                </label>
-                <label class="form-control">
-                    <input type="radio" id="E" name="unique" value="E">
-                    Réponse E
-                </label>
-            </fieldset>
-            
-            <fieldset>
-                <p class="question">Question choix multiples</p>
-                <label class="form-control">
-                    <input type="checkbox" id="F" name="R1" value="F">
-                    Réponse A
-                </label>
-                <label class="form-control">
-                    <input type="checkbox" id="G" name="R2" value="G">
-                    Réponse B
-                </label>
-                <label class="form-control">
-                    <input type="checkbox" id="H" name="R3" value="H">
-                    Réponse C
-                </label>
-            </fieldset>
+      <label class="petit">
+        <input
+          class="collecte_donnees"
+          type="checkbox"
+          name="collecte_donnees"
+          id="collecte_donnees"
+        />
+        Je consens à l'utilisation des données collectées par l'ASRE49 pour le
+        bon déroulement du jeu-concours.
+        <p class="ppetit">
+          Le prestataire s'engage à ne pas réutiliser les données fournies à des
+          fins commerciales.
+        </p>
+        <p class="ppetit">Jeu limité à un seul bulletin par salarié.</p>
+        <p class="ppetit">
+          Règlement complet du jeu disponible auprès du correspondant ASRE49 de
+          votre entreprise.
+        </p>
+      </label>
 
-            <fieldset>
-                <p class="question">Question choix multiples Question choix multiples Question choix multiples Question choix multiples</p>
-                <label class="form-control">
-                    <input type="checkbox" id="I" name="R1" value="I">
-                    Réponse A
-                </label>
-                <label class="form-control">
-                    <input type="checkbox" id="J" name="R2" value="J">
-                    Réponse B
-                </label>
-                <label class="form-control">
-                    <input type="checkbox" id="K" name="R3" value="K">
-                    Réponse C
-                </label>
-            </fieldset>
+      <p class="sous-titre">Questionnaire :</p>
 
-            <fieldset>
-                <p class="question">Question choix multiples Question choix multiples</p>
-                <label class="form-control">
-                    <input type="checkbox" id="L" name="R1" value="L">
-                    Réponse A
-                </label>
-                <label class="form-control">
-                    <input type="checkbox" id="M" name="R2" value="M">
-                    Réponse B
-                </label>
-                <label class="form-control">
-                    <input type="checkbox" id="N" name="R3" value="N">
-                    Réponse C
-                </label>
-                <label class="form-control">
-                    <input type="checkbox" id="O" name="R4" value="O">
-                    Réponse D
-                </label>
-            </fieldset>
+      <div id="questionnaire">
+        <fieldset>
+          <p class="question">Question 1:</p>
+          <label class="form-control">
+            <input type="checkbox" id="A" name="Q1" value="A" />
+            Réponse A
+          </label>
+          <label class="form-control">
+            <input type="checkbox" id="B" name="Q1" value="B" />
+            Réponse B
+          </label>
+          <label class="form-control">
+            <input type="checkbox" id="C" name="Q1" value="C" />
+            Réponse C
+          </label>
+        </fieldset>
 
-            <fieldset>
-                <p class="question">Question choix unique</p>
-                <label>
-                    Votre réponse : 
-                    <input type ="number" name="Q15" id="Q15">
-                </label>
-            </fieldset>
-        </div>
+        <fieldset>
+          <p class="question">Question choix unique</p>
+          <label class="form-control">
+            <input type="radio" id="D" name="unique" value="D" />
+            Réponse D
+          </label>
+          <label class="form-control">
+            <input type="radio" id="E" name="unique" value="E" />
+            Réponse E
+          </label>
+        </fieldset>
 
-        <!--<button type="submit" name="sauvegarder" id="sauvegarder">Sauvegarder</button>-->
-        <button type="submit" name="envoyer" id="envoyer"">Valider les réponses</button>
+        <fieldset>
+          <p class="question">Question choix multiples</p>
+          <label class="form-control">
+            <input type="checkbox" id="F" name="R1" value="F" />
+            Réponse A
+          </label>
+          <label class="form-control">
+            <input type="checkbox" id="G" name="R2" value="G" />
+            Réponse B
+          </label>
+          <label class="form-control">
+            <input type="checkbox" id="H" name="R3" value="H" />
+            Réponse C
+          </label>
+        </fieldset>
 
+        <fieldset>
+          <p class="question">
+            Question choix multiples Question choix multiples Question choix
+            multiples Question choix multiples
+          </p>
+          <label class="form-control">
+            <input type="checkbox" id="I" name="R1" value="I" />
+            Réponse A
+          </label>
+          <label class="form-control">
+            <input type="checkbox" id="J" name="R2" value="J" />
+            Réponse B
+          </label>
+          <label class="form-control">
+            <input type="checkbox" id="K" name="R3" value="K" />
+            Réponse C
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <p class="question">
+            Question choix multiples Question choix multiples
+          </p>
+          <label class="form-control">
+            <input type="checkbox" id="L" name="R1" value="L" />
+            Réponse A
+          </label>
+          <label class="form-control">
+            <input type="checkbox" id="M" name="R2" value="M" />
+            Réponse B
+          </label>
+          <label class="form-control">
+            <input type="checkbox" id="N" name="R3" value="N" />
+            Réponse C
+          </label>
+          <label class="form-control">
+            <input type="checkbox" id="O" name="R4" value="O" />
+            Réponse D
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <p class="question">Question choix unique</p>
+          <label>
+            Votre réponse :
+            <input type="number" name="Q15" id="Q15" />
+          </label>
+        </fieldset>
+      </div>
+
+      <!--<button type="submit" name="sauvegarder" id="sauvegarder">Sauvegarder</button>-->
+      <button type="submit" name="envoyer" id="envoyer">
+        Valider les réponses
+      </button>
     </form>
 
-    <!-- <script>    onclick="submitFormAndRedirect()
-        function envoi_reponses() {
-            action="https://script.google.com/macros/s/AKfycbyZOODr2meKxl1jO80W5D1KC6dnC-bT11mtDxAPXrUgl68Bnbf4Bj_yqHcMh4KUo3tRMA/exec"
-        }
-    </script> -->
-    <!-- <script type="text/javascript" src="https://code.jquerry.com/jquery-3.4.1.js"> </script>
-    <script type="text/javascript" src="jQuery.serializeObject.js" ></script>
+    <script>
+      document
+        .getElementById("formulaire")
+        .addEventListener("submit", function (event) {
+          event.preventDefault(); // Empêcher la soumission par défaut
 
-    <script type="text/javascript">
-        var $form=$('form#formulaire'), 
-        url = 'https://script.google.com/macros/s/AKfycbzgPVXIxjLMEzqehaoezd7wjrRFjRS2Jfx5PAYDC97otWQWQiAwJAb_IwVzSK9yn03mdw/exec'; 
+          // Récupérer les données du formulaire
+          var formData = new FormData(this);
 
-        $('#envoyer').on('click', function(e) {
-            e.preventDefault(); 
-            var jqxhr = $.ajax({
-                url:  "url", 
-                method: "GET", 
-                dataType: "json", 
-                data: $form.serializedObject()
-            }).done(function(){
+          // Effectuer une requête AJAX POST pour exécuter l'AppScript
+          var xhr = new XMLHttpRequest();
+          xhr.open("POST", this.action);
+          xhr.send(formData);
 
-            });
-            });
-        </script> -->
-    
-</body>
+          // Rediriger l'utilisateur vers une nouvelle page une fois que la requête a été résolue avec succès
+          xhr.onload = function () {
+            if (xhr.status === 200) {
+              // vérifier que la requête ait abouti avec succès
+              window.location.href =
+                "https://rdjs22.github.io/activ-esaip/Fini.html";
+            }
+          };
+        });
+    </script>
+  </body>
 </html>
